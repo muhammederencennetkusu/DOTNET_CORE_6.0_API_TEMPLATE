@@ -33,5 +33,20 @@ The project follows Clean Architecture principles. The main projects are divided
 Follow the steps below to set up the project:
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/muhammederencennetkusu/DOTNET_CORE_6.0_API_TEMPLATE.git
+
+<code>git clone https://github.com/muhammederencennetkusu/DOTNET_CORE_6.0_API_TEMPLATE.git</code>
+
+
+### 2. Navigate to the Project Directory
+<code>cd DOTNET_CORE_6.0_API_TEMPLATE</code>
+
+
+### 5. Configure the Database (SQL Server)
+Update the appsettings.json file in the API project with your database connection string.
+
+<code>{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=your-server;Database=your-db;User Id=your-user;Password=your-password;"
+  }
+}</code>
+If you're using SQL Server, the database configuration will be stored here. You can also use other databases (such as MySQL or PostgreSQL) by modifying the connection string and configuring the appropriate providers.
